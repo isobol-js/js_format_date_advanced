@@ -11,7 +11,6 @@ function formatDate(date, fromFormat, toFormat) {
   const datePartsKeys = ['YYYY', 'YY', 'MM', 'DD'];
 
   const fromSeparator = fromFormat.find(f => !datePartsKeys.includes(f));
-  const toSeparator = toFormat.find(f => !datePartsKeys.includes(f));
 
   const fromIndexes = {
     YYYY: fromFormat.indexOf('YYYY'),
